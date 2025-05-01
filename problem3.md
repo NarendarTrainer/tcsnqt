@@ -46,19 +46,4 @@ Explanation of Output:
 . Charlie: 80
 . Alice and Bob tie, but Alice appeared first (acceptable by tie rule).
 ```
-```python
-n=int(input())
-scores={}
-i=0
-while i<n:
-  name, score=input().split()
-  scores[name]=scores.get(name,0)+int(score)
-  i+=1
-max_score=max(scores.values())
 
-
-for student in scores:
-  if scores[student]==max_score:
-    print(student)
-    break
-```
