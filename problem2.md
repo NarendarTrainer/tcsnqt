@@ -45,18 +45,4 @@ Explanation of Output:
 . Special: !, @,#->3
 ````
 
-```python
-s=input()
-result={"alphabets":0,"digits":0,"special":0}
-i=0
-while i<len(s):
-  if s[i].isalpha():
-    result["alphabets"]+=1
-  elif s[i].isdigit():
-    result["digits"]+=1
-  else:
-    result["special"]+=1
-  i+=1
-for key,value in result.items():
-  print(f"{key}: {value}")
-```
+
