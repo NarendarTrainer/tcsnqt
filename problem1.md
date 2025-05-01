@@ -41,17 +41,5 @@ Explanation of Output:
 · Hence, longest increasing subsequence has length 3.
 ```
 ```python
-nums=list(map(int,input().split()))
-max_len=1
-current_len=1
-i=1
-while i<len(nums):
-  if nums[i]>nums[i-1]:
-    current_len+=1
-    if current_len>max_len:
-      max_len=current_len
-  else:
-    current_len=1
-  i+=1
-print(max_len-1)
+
 ```
